@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase /
+
+# Исключаем из обработки папку docs и все ее подфайлы
+RewriteCond %{REQUEST_URI} ^/docs/
+RewriteRule ^ - [L]
+
+# Исключаем из обработки URL, указывающие на файлы с этими расширениями (пополняй список при необходимости)
+RewriteCond %{REQUEST_URI} \.(pdf|zip|docx|xlsx|pptx|xls|jpg|jpeg|png|gif|svg|mp4|mp3)$ [NC]
+RewriteRule ^ - [L]
+
+# Перенаправляем с /page.html на /page (чистый URL)
+RewriteCond %{THE_REQUEST} \s/([^\s]+?)\.html(?:\s|\?) [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Если запрашиваемый путь не является директорией, и файла без расширения нет,
+# но существует файл с .html — отдаем его (без изменения адреса в браузере)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [L]

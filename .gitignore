@@ -1,0 +1,9 @@
+*.ini
+*.7z
+КОНКУРСНАЯ ДОКУМЕНТАЦИЯ 2.7z
+docs/
+licenses/
+vacancies/
+
+.DS_Store
+*.log
