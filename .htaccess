@@ -19,3 +19,15 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [L]
+
+# No-cache CSS/JS (браузер не кэширует)
+<FilesMatch "\.(css|js)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</FilesMatch>
+
+# Долгий кэш для изображений (экономия трафика)
+<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
