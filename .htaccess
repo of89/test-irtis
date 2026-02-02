@@ -30,4 +30,15 @@ RewriteRule ^ %{REQUEST_URI}.html [L]
 # Долгий кэш для изображений (экономия трафика)
 <FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
     Header set Cache-Control "max-age=31536000, public"
+</FilesMatch># Cache bust v1.1
+<FilesMatch "\.(css|js)$">
+Header set Cache-Control "no-cache"
+</FilesMatch>
+<FilesMatch "\.(png|jpg|jpeg|gif|svg)$">
+Header set Cache-Control "max-age=3600"
+</FilesMatch>
+
+# Mobile cache fix v1.0
+<FilesMatch "\.(css|js|png|jpg)$">
+Header set Cache-Control "no-cache"
 </FilesMatch>
