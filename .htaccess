@@ -13,32 +13,17 @@ RewriteRule ^ - [L]
 RewriteCond %{THE_REQUEST} \s/([^\s]+?)\.html(?:\s|\?) [NC]
 RewriteRule ^ %1 [R=301,L]
 
-# Если запрашиваемый путь не является директорией, и файла без расширения нет,
-# но существует файл с .html — отдаем его (без изменения адреса в браузере)
+# Если запрашиваемый путь не является директорией, и файла без расширения нет, но существует файл с .html — отдаем его (без изменения адреса в браузере)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [L]
 
-# No-cache CSS/JS (браузер не кэширует)
-<FilesMatch "\.(css|js)$">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
-    Header set Pragma "no-cache"
-    Header set Expires 0
-</FilesMatch>
-
-# Долгий кэш для изображений (экономия трафика)
-<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
-    Header set Cache-Control "max-age=31536000, public"
-</FilesMatch># Cache bust v1.1
-<FilesMatch "\.(css|js)$">
-Header set Cache-Control "no-cache"
-</FilesMatch>
-<FilesMatch "\.(png|jpg|jpeg|gif|svg)$">
-Header set Cache-Control "max-age=3600"
-</FilesMatch>
-
-# Mobile cache fix v1.0
-<FilesMatch "\.(css|js|png|jpg)$">
-Header set Cache-Control "no-cache"
-</FilesMatch>
+# КЭШ CSS/JS 1 месяц, IMG 1 год
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+</IfModule>
