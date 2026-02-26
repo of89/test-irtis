@@ -102,11 +102,21 @@ img {
     object-fit: contain;
 }
 
-.divider {
+.divider-h {
+    display: flex;
     flex: 0 0 1px;
     width: 100%;
     height: 1px;
     background: var(--grey-text-super-light);
+    margin: 0;
+}
+
+.divider-v {
+    flex: none;
+    width: 0;
+    height: 100%;
+    border-right: 0.5px solid var(--grey-text-super-light);
+    background: none;
     margin: 0;
 }
 
@@ -351,29 +361,6 @@ a {
     height: 40px;
 }
 
-.ident-combo-01-yellow,
-.ident-combo-02-pink,
-.ident-combo-03-violet,
-.ident-combo-04-pink {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 168px;
-    aspect-ratio: 1/1;
-    margin: 0;
-}
-
-.ident-decor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0;
-}
-
 /* ХЭДЕР ——— */
 header {
     display: flex;
@@ -383,7 +370,7 @@ header {
     padding: 0;
     height: 64px;
     background: var(--grey-bg-white);
-    border-bottom: 0.5px solid var(--grey-text-main);
+    border: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -434,8 +421,8 @@ header .logo:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 52px;
-    padding: 2px 24px;
+    height: 56px;
+    padding: 4px 28px;
     gap: 12px;
     font-family: var(--heading-font);
     font-size: var(--fz-13);
@@ -444,7 +431,7 @@ header .logo:hover {
     line-height: 110%; /* 14,3px */
     letter-spacing: 0px;
     text-transform: uppercase;
-    border-radius: 40px;
+    border-radius: 48px;
     color: var(--grey-text-main);
     text-decoration: none;
     transition: all 0.3s ease;
@@ -452,8 +439,8 @@ header .logo:hover {
 
 #menu li a:hover {
     border: 1.25px dashed var(--grey-text-main);
-    color:var(--grey-text-main);
-    transform: scale(0.95); /* Увеличение на 10% */
+    color: var(--grey-text-main);
+    transform: scale(0.95); /* уменьшение на 5% */
 }
 
 #menu li a#summary-link {
@@ -462,20 +449,19 @@ header .logo:hover {
     letter-spacing: 0.25px;
 }
 
-#menu li a#jobs-link,
+#menu li a#focus-link,
 #menu li a#summary-link {
     position: relative;
 }
 
-#menu li a#jobs-link::after,
+#menu li a#focus-link::after,
 #menu li a#summary-link::after {
     content: "";
     position: absolute;
-    bottom: -9px;
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 6px;
-    height: 6px;
+    width: 8px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: var(--pink-accent-main);
@@ -484,7 +470,7 @@ header .logo:hover {
     animation: pulse 1.5s infinite ease-in-out;
 }
 
-#menu li a#jobs-link:hover,
+#menu li a#focus-link:hover,
 #menu li a#summary-link:hover {
     border: none;
     transform: scale(0.95);
@@ -492,7 +478,7 @@ header .logo:hover {
     background: var(--pink-bg-super-dark);
 }
 
-#menu li a#jobs-link:hover::after,
+#menu li a#focus-link:hover::after,
 #menu li a#summary-link:hover::after {
     animation: none;
     opacity: 0;
@@ -512,16 +498,22 @@ header .logo:hover {
 
 #menu li.has-submenu .submenu {
     display: none;
+    flex-direction: column;
+    justify-content: flex-start;
     position: absolute;
-    top: 48px;
     list-style: none;
-    padding: 24px 0px 0px 0px;
+    top: 100%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    padding-top: 4px;
+    margin: 0;
     z-index: 11;
 }
 
 #menu li.has-submenu .submenu li a {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
+    text-align: left;
+    white-space: nowrap;
     padding: 16px 32px 16px 16px;
     background: var(--grey-bg-white);
     border: none;
@@ -531,16 +523,13 @@ header .logo:hover {
     transform: none;
 }
 
+#menu li.has-submenu:hover .submenu {
+    display: flex;
+}
+
 #menu li.has-submenu .submenu li a:hover {
     background: var(--pink-bg-super-dark);
     color: var(--pink-text-white);
-    border-radius: 0px;  
-}
-
-#menu li.has-submenu:hover .submenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
 }
 
 @keyframes pulse {
@@ -565,7 +554,7 @@ header .logo:hover {
     min-width: 0;
     max-width: 100vw;
     width: 100%;
-    background-image: url(/img/bg/MP-intro_bg_v1.1.png);
+    background-image: url(/img/bg/MP-hero_bg_v1.2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -573,24 +562,24 @@ header .logo:hover {
 }
 
 .hero .inner {
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     min-width: 0;
-    max-width: 720px;
+    max-width: 816px;
     width: 100%;
     height: 100%;
-    padding-left: 40px;
-    margin: 0;
+    padding: 0;
+    margin-left: 56px;
 }
 
 .hero .key-info {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     gap: 20px;
     padding: 0;
@@ -598,27 +587,22 @@ header .logo:hover {
 }
 
 .hero img.logo {
-    display: block;
-    width: 96px;
-    min-width: 96px;
+    min-width: 88px;
+    width: 88px;
     height: auto;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    margin: 0 5px 15px 0;
 }
 
 .hero .divider-wrapper {
     display: flex;
+    flex: 0 1 1;
     flex-direction: column;
     align-items: center;
-    height: 144px;
-    padding: 7px 0 0 0;
+    height: 100%;
+    padding: 5px 8px 5px 12px;
 }
 
-.hero .divider {
-    height: 100%;
-    border-right: 0.5px solid var(--pink-text-black);
-    margin: 0;
+.hero .divider-wrapper .divider-v {
+    border-color: var(--grey-text-light);
 }
 
 .hero .text-info {
@@ -626,27 +610,25 @@ header .logo:hover {
     flex-direction: column;
     align-items: flex-start;
     max-width: fit-content;
-    padding-top: 8px;
+    padding: 0;
     margin: 0;
 }
 
 .hero h1 {
-    font-size: var(--fz-32);
-    font-weight: 450;
-    line-height: 104%;
+    font-size: var(--fz-40);
+    line-height: 108%;
     letter-spacing: 0;
-    text-align: left;
     color: var(--pink-text-black);
     text-transform: uppercase;
-    margin: 0;
 }
 
 .hero p {
     font-family: var(--main-font);
-    font-size: var(--fz-17);
+    font-size: var(--fz-20);
     font-weight: 200;
     line-height: 140%;
-    letter-spacing: -0.25px;
+    letter-spacing: 0;
+    text-transform: uppercase;
     color: var(--pink-text-black);
     padding-left: 2px;
     margin: 0;
@@ -660,6 +642,7 @@ header .logo:hover {
     font-size: var(--fz-13);
     color: var(--pink-text-black);
     transform: translateX(-50%);
+    text-transform: none;
     margin: 0;
 }
 
@@ -1908,11 +1891,8 @@ header .logo:hover {
     padding-top: 2px;
 }
 
-.curators .card-gallery .divider {
-    display: block;
-    height: 100%;
+.curators .card-gallery .divider-v {
     border-right: 1px solid var(--grey-text-super-light);
-    margin: 0;
 }
 
 .curators .info-card img.gerb {
@@ -2600,7 +2580,7 @@ footer .footer-branding .text {
     padding: 0;
 }
 
-.footer-meta .curators-logo .divider {
+.footer-meta .curators-logo .divider-v {
     height: 100%;
     border-right: 0.5px solid var(--grey-text-light);
     margin: 0;
@@ -2710,7 +2690,7 @@ footer .footer-branding .text {
     padding: 2px 0 3px 0;
 }
 
-.policy-inner .policy-header .divider {
+.policy-inner .policy-header .divider-v {
     height: 100%;
     border-right: 0.5px solid var(--grey-text-light);
     margin: 0;
@@ -2967,7 +2947,7 @@ footer .footer-branding .text {
     padding: 7px 0 0 0;
 }
 
-.vacancy-hero .divider {
+.vacancy-hero .divider-v {
     height: 100%;
     border-right: 0.5px solid var(--pink-text-white);
     margin: 0;
@@ -3076,7 +3056,7 @@ footer .footer-branding .text {
     margin: 0;
 }
 
-.vacancies .vacancy-header .divider {
+.vacancies .vacancy-header .divider-v {
     height: 100%;
     border-right: 0.5px solid var(--pink-text-black);
     margin: 0;
@@ -3724,7 +3704,7 @@ footer .footer-branding .text {
     padding: 0;
 }
 
-.vacancy-about-us .curators .card-gallery .divider {
+.vacancy-about-us .curators .card-gallery .divider-v {
     display: block;
     height: 100%;
     border-right: 1px solid var(--grey-text-light);
@@ -3915,7 +3895,7 @@ footer .footer-branding .text {
     margin: 0;
 }
 
-.vacancy-main-info .divider {
+.vacancy-main-info .divider-v {
     display: flex;
     height: 100%;
     align-items: center;
@@ -5896,13 +5876,13 @@ footer.wide-footer .footer-meta .text-info {
 } 
 
 @media (max-width: 1279.9px) {
-/*  ХЭДЕР и МЕНЮ --- */
+/*  ХЭДЕР и МЕНЮ ——— medium */
     header {
         height: 48px;
     }
 
     header .content-wrapper {
-        padding: 0px 12px 0px 28px;
+        padding: 2px 12px 2px 28px;
         margin: 0;
     }
 
@@ -5911,10 +5891,10 @@ footer.wide-footer .footer-meta .text-info {
     }
 
     #menu li a {
-        min-height: 48px;
-        font-size: var(--fz-12);
+        height: 44px;
+        font-size: var(--fz-10);
         line-height: 120%; /* 14,4px */
-        padding: 2px 16px;
+        padding: 2px 20px;
     }
 
     #menu li.has-submenu .chevron-down {
@@ -5922,12 +5902,13 @@ footer.wide-footer .footer-meta .text-info {
     }
 
     #menu li.has-submenu .submenu {
-        top: 40px;
-        padding: 16px 0px 0px 0px;
+        padding-top: 2px;
     }
 
-    #menu li a#jobs-link::after {
-    bottom: -4px;
+    #menu li a#focus-link::after,
+    #menu li a#summary-link::after {
+        width: 6px;
+        bottom: -5.5px;
     }
 
 /*  ГЛАВНАЯ > ХИРО БЛОК ——— medium */
@@ -5939,41 +5920,35 @@ footer.wide-footer .footer-meta .text-info {
 
     .hero .inner {
         max-width: fit-content;
-        padding-left: 32px;
+        margin-left: 32px;
     }
 
     .hero .key-info {
         gap: 12px;
-        padding-bottom: 8px;
     }
 
     .hero img.logo {
-        width: 96px;
-        min-width: 96px;
-        margin: 0 2px 0 0;
+        min-width: 60px;
+        width: 60px;
     }
 
     .hero .divider-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 108px;
-        padding: 13px 0px 0px 0px;
+        padding: 4px 4px 3px 8px;
     }
 
     .hero .text-info {
         max-width: min-content;
-        padding-top: 12px;
+        gap: 2px;
     }
 
     .hero h1 {
-        font-size: 26px;
-        line-height: 104%; /* 41.6px */
+        font-size: var(--fz-28);
+        line-height: 104%;
         letter-spacing: -0.78px;
     }
 
     .hero p {
-        font-size: var(--fz-14);
+        font-size: var(--fz-13);
         padding-left: 1px;
     }
 
@@ -7412,7 +7387,7 @@ footer.wide-footer .footer-meta .text-info {
         margin: 2px;
     }
 
-    .vacancy-main-info .divider {
+    .vacancy-main-info .divider-v {
         height: 100%;
         align-items: center;
         outline: 0.5px solid var(--grey-text-light);
@@ -7669,12 +7644,6 @@ footer.wide-footer .footer-meta .text-info {
         max-width: 1200px;
         padding: 0;
         margin: 0 32px;
-    }
-
-/*  СТРАНИЦА КОНКУРСА > HEADER > МЕНЮ --- medium */
-    #menu li a {
-        min-height: 48px;
-        font-size: var(--fz-10);
     }
 
 /*  СТРАНИЦА КОНКУРСА > HERO --- */
@@ -8792,18 +8761,18 @@ footer.wide-footer .footer-meta .text-info {
     }
 
 /*  Убираем индикатор у вакансий на мобилке */
-    #menu li a#jobs-link {
+    #menu li a#focus-link {
         border-radius: 0 !important;
         background: none !important;
     }
 
-    #menu li a#jobs-link:hover {
+    #menu li a#focus-link:hover {
         border: none !important;
         background: none !important;
         transform: none !important;
     }
 
-    #menu li a#jobs-link::after {
+    #menu li a#focus-link::after {
         animation: none !important;
         opacity: 0 !important;
         transition: none !important;
@@ -8812,35 +8781,37 @@ footer.wide-footer .footer-meta .text-info {
 
 /*  ГЛАВНАЯ > ХИРО БЛОК ——— small */
     .hero {
-        background-image: url(/img/bg/MP-intro_bg_mobile_v1.1.png);
+        background-image: url(/img/bg/MP-hero_bg_v1.2_mobile.png);
         max-width: 768px;
         height: 640px;
         margin-top: 48px;
     }
 
     .hero .inner {
-        max-width: 342px;
+        align-items: center;
+        max-width: 640px;
         padding: 0 16px;
     }
 
     .hero .key-info {
         flex-wrap: wrap;
-        gap: 10px;
+        width: fit-content;
+        gap: 0 10px;
         padding-bottom: 4px;
     }
 
     .hero img.logo {
-        width: 64px;
-        min-width: 64px;
+        width: 32px;
+        min-width: 32px;
         margin: 0 4px 8px 0;
     }
 
     .hero .divider-wrapper {
-        height: 64px;
-        padding: 0 3px 1px 1px;
+        padding: 2px 3px 2px 1px;
     }
 
     .hero .text-info {
+        gap: 2-px;
         padding: 0;
     }
 
@@ -8852,7 +8823,7 @@ footer.wide-footer .footer-meta .text-info {
 
     .hero p,
     .hero .subtext {
-        font-size: var(--fz-12);
+        font-size: var(--fz-10);
         line-height: 116%;
         padding: 0;
     }
@@ -8860,8 +8831,7 @@ footer.wide-footer .footer-meta .text-info {
     .hero .subtext {
         width: 100%;
         min-width: fit-content;
-        max-width: 270px;
-        margin-left: 16px;
+        text-align: center;
     }
 
 /*  ГЛАВНАЯ > ИНТРО БЛОК ——— small */
@@ -9468,7 +9438,7 @@ footer.wide-footer .footer-meta .text-info {
         height: 72px;
     }
 
-    .curators .card-gallery .divider {
+    .curators .card-gallery .divider-v {
         border-right: 0.5px solid var(--grey-text-super-light);
     }
 
@@ -10293,7 +10263,7 @@ footer.wide-footer .footer-meta .text-info {
         margin: 2px;
     }
 
-    .vacancy-main-info .divider {
+    .vacancy-main-info .divider-v {
         height: 100%;
         align-items: center;
         outline: 0.5px solid var(--grey-text-super-light);
@@ -11433,6 +11403,20 @@ footer.wide-footer .footer-meta .text-info {
 }
 
 @media (max-width: 538px) {
+    .hero .key-info {
+        flex-direction: column;
+    }
+
+    .hero .divider-wrapper {
+        display: none;
+    }
+
+    .hero img.logo {
+        min-width: 28px;
+        width: 28px;
+        margin: 0 0 0 0.5px;
+    }
+    
     .curators {
         padding-top: 32px;
         padding-bottom: 40px;
