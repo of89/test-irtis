@@ -655,12 +655,11 @@ header .logo:hover {
     min-width: 0;
     max-width: 100vw;
     width: 100%;
-    background: 
-        var(--pink-bg-black),
-        url(/img/bg/pattern/struckaxiom-light_v1.0.svg);
-    background-size: cover, 96px 96px;
-    background-position: center, 50% 50%;
-    background-repeat: no-repeat, repeat;
+    background-color: var(--pink-bg-black);
+    background-image: url(/img/bg/pattern/struckaxiom-light_v1.0.svg);
+    background-size: 96px 96px;
+    background-repeat: repeat;
+    background-position: center;
     padding: 104px 64px;
     margin: 0;
 }
