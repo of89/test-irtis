@@ -1,9 +1,17 @@
-*.ini
 *.7z
-КОНКУРСНАЯ ДОКУМЕНТАЦИЯ 2.7z
-docs/
-licenses/
-vacancies/
-
-.DS_Store
+*.zip
+*.rar
+*.tar.gz
+awstats/
 *.log
+cache/
+tmp/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+licenses/

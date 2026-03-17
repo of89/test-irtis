@@ -655,7 +655,8 @@ header .logo:hover {
     min-width: 0;
     max-width: 100vw;
     width: 100%;
-    background-image: url("/img/bg/pattern/struckaxiom-pink-dark-bg.jpg");
+    background: var(--pink-bg-black);
+    mask: url("/img/bg/pattern/struckaxiom-light.svg") repeat center / 200px 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8837,6 +8838,8 @@ footer.wide-footer .footer-meta .text-info {
 /*  ГЛАВНАЯ > ИНТРО БЛОК ——— small */
     .intro {
         padding: 40px 16px 48px 16px;
+        mask-size: 128px 128px;  /* меньше паттерн на мобилках */
+        padding: 80px 32px;
     }
 
     .intro h1 {
