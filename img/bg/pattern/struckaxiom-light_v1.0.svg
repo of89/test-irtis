@@ -1,93 +1,84 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2868
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red21\green163\blue168;\red168\green0\blue52;\red20\green20\blue20;
-}
-{\*\expandedcolortbl;;\cssrgb\c0\c69412\c71765;\cssrgb\c72549\c9412\c26275;\csgray\c10000;
-}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab722
-\pard\pardeftab722\sa40\pardirnatural\partightenfactor0
-
-\f0\fs30 \cf2 <svg xmlns=\cf3 "http://www.w3.org/2000/svg"\cf2  viewBox=\cf3 "0 0 100 100"\cf2 >\cf4 \
-\cf2 <path d=\cf3 "M41 41H42V42H41V41Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M42 42H43V43H42V42Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M43 43H44V44H43V43Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M44 44H45V45H44V44Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M45 45H46V46H45V45Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M46 46H47V47H46V46Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M47 47H48V48H47V47Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M48 48H49V49H48V48Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M49 49H50V50H49V49Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M50 50H51V51H50V50Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M51 51H52V52H51V51Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M52 52H53V53H52V52Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M53 53H54V54H53V53Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M54 54H55V55H54V54Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M55 55H56V56H55V55Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M56 56H57V57H56V56Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M57 57H58V58H57V57Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M58 58H59V59H58V58Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M59 59H60V60H59V59Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M60 60H61V61H60V60Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M61 61H62V62H61V61Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M62 62H63V63H62V62Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M63 63H64V64H63V63Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M64 64H65V65H64V64Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M65 65H66V66H65V65Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M66 66H67V67H66V66Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M67 67H68V68H67V67Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M68 68H69V69H68V68Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M69 69H70V70H69V69Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M70 70H71V71H70V70Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M71 71H72V72H71V71Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M72 72H73V73H72V72Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M73 73H74V74H73V73Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M74 74H75V75H74V74Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M75 75H76V76H75V75Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M76 76H77V77H76V76Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M77 77H78V78H77V77Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M78 78H79V79H78V78Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M79 79H80V80H79V79Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M80 80H81V81H80V80Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M39 39H40V40H39V39Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M38 38H39V39H38V38Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M37 37H38V38H37V37Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M36 36H37V37H36V36Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M35 35H36V36H35V35Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M34 34H35V35H34V34Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M33 33H34V34H33V33Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M32 32H33V33H32V32Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M31 31H32V32H31V31Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M30 30H31V31H30V30Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M29 29H30V30H29V29Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M28 28H29V29H28V28Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M27 27H28V28H27V27Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M26 26H27V27H26V26Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M25 25H26V26H25V25Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M24 24H25V25H24V24Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M23 23H24V24H23V23Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M22 22H23V23H22V22Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M21 21H22V22H21V21Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M20 20H21V21H20V20Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M19 19H20V20H19V19Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M18 18H19V19H18V18Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M17 17H18V18H17V17Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M16 16H17V17H16V16Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M15 15H16V16H15V15Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M14 14H15V15H14V14Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M13 13H14V14H13V13Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M12 12H13V13H12V12Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M11 11H12V12H11V11Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M10 10H11V11H10V10Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M9 9H10V10H9V9Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M8 8H9V9H8V8Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M7 7H8V8H7V7Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M6 6H7V7H6V6Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M5 5H6V6H5V5Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M4 4H5V5H4V4Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M3 3H4V4H3V3Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M2 2H3V3H2V2Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M1 1H2V2H1V1Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M0 0H1V1H0V0Z"\cf2  fill=\cf3 "#383734"\cf2 />\cf4 \
-\cf2 <path d=\cf3 "M40.5 0.5V40M40.5 41V80.5M0.5 40.5H40M41 40.5H80.5"\cf2  stroke=\cf3 "#2E2D2A"\cf2 />\cf4 \
-\cf2 </svg>}
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="40" y="40" width="1" height="1" fill="#CCC9C7"/>
+<path d="M41 41H42V42H41V41Z" fill="#383734"/>
+<path d="M42 42H43V43H42V42Z" fill="#383734"/>
+<path d="M43 43H44V44H43V43Z" fill="#383734"/>
+<path d="M44 44H45V45H44V44Z" fill="#383734"/>
+<path d="M45 45H46V46H45V45Z" fill="#383734"/>
+<path d="M46 46H47V47H46V46Z" fill="#383734"/>
+<path d="M47 47H48V48H47V47Z" fill="#383734"/>
+<path d="M48 48H49V49H48V48Z" fill="#383734"/>
+<path d="M49 49H50V50H49V49Z" fill="#383734"/>
+<path d="M50 50H51V51H50V50Z" fill="#383734"/>
+<path d="M51 51H52V52H51V51Z" fill="#383734"/>
+<path d="M52 52H53V53H52V52Z" fill="#383734"/>
+<path d="M53 53H54V54H53V53Z" fill="#383734"/>
+<path d="M54 54H55V55H54V54Z" fill="#383734"/>
+<path d="M55 55H56V56H55V55Z" fill="#383734"/>
+<path d="M56 56H57V57H56V56Z" fill="#383734"/>
+<path d="M57 57H58V58H57V57Z" fill="#383734"/>
+<path d="M58 58H59V59H58V58Z" fill="#383734"/>
+<path d="M59 59H60V60H59V59Z" fill="#383734"/>
+<path d="M60 60H61V61H60V60Z" fill="#383734"/>
+<path d="M61 61H62V62H61V61Z" fill="#383734"/>
+<path d="M62 62H63V63H62V62Z" fill="#383734"/>
+<path d="M63 63H64V64H63V63Z" fill="#383734"/>
+<path d="M64 64H65V65H64V64Z" fill="#383734"/>
+<path d="M65 65H66V66H65V65Z" fill="#383734"/>
+<path d="M66 66H67V67H66V66Z" fill="#383734"/>
+<path d="M67 67H68V68H67V67Z" fill="#383734"/>
+<path d="M68 68H69V69H68V68Z" fill="#383734"/>
+<path d="M69 69H70V70H69V69Z" fill="#383734"/>
+<path d="M70 70H71V71H70V70Z" fill="#383734"/>
+<path d="M71 71H72V72H71V71Z" fill="#383734"/>
+<path d="M72 72H73V73H72V72Z" fill="#383734"/>
+<path d="M73 73H74V74H73V73Z" fill="#383734"/>
+<path d="M74 74H75V75H74V74Z" fill="#383734"/>
+<path d="M75 75H76V76H75V75Z" fill="#383734"/>
+<path d="M76 76H77V77H76V76Z" fill="#383734"/>
+<path d="M77 77H78V78H77V77Z" fill="#383734"/>
+<path d="M78 78H79V79H78V78Z" fill="#383734"/>
+<path d="M79 79H80V80H79V79Z" fill="#383734"/>
+<path d="M80 80H81V81H80V80Z" fill="#383734"/>
+<path d="M39 39H40V40H39V39Z" fill="#383734"/>
+<path d="M38 38H39V39H38V38Z" fill="#383734"/>
+<path d="M37 37H38V38H37V37Z" fill="#383734"/>
+<path d="M36 36H37V37H36V36Z" fill="#383734"/>
+<path d="M35 35H36V36H35V35Z" fill="#383734"/>
+<path d="M34 34H35V35H34V34Z" fill="#383734"/>
+<path d="M33 33H34V34H33V33Z" fill="#383734"/>
+<path d="M32 32H33V33H32V32Z" fill="#383734"/>
+<path d="M31 31H32V32H31V31Z" fill="#383734"/>
+<path d="M30 30H31V31H30V30Z" fill="#383734"/>
+<path d="M29 29H30V30H29V29Z" fill="#383734"/>
+<path d="M28 28H29V29H28V28Z" fill="#383734"/>
+<path d="M27 27H28V28H27V27Z" fill="#383734"/>
+<path d="M26 26H27V27H26V26Z" fill="#383734"/>
+<path d="M25 25H26V26H25V25Z" fill="#383734"/>
+<path d="M24 24H25V25H24V24Z" fill="#383734"/>
+<path d="M23 23H24V24H23V23Z" fill="#383734"/>
+<path d="M22 22H23V23H22V22Z" fill="#383734"/>
+<path d="M21 21H22V22H21V21Z" fill="#383734"/>
+<path d="M20 20H21V21H20V20Z" fill="#383734"/>
+<path d="M19 19H20V20H19V19Z" fill="#383734"/>
+<path d="M18 18H19V19H18V18Z" fill="#383734"/>
+<path d="M17 17H18V18H17V17Z" fill="#383734"/>
+<path d="M16 16H17V17H16V16Z" fill="#383734"/>
+<path d="M15 15H16V16H15V15Z" fill="#383734"/>
+<path d="M14 14H15V15H14V14Z" fill="#383734"/>
+<path d="M13 13H14V14H13V13Z" fill="#383734"/>
+<path d="M12 12H13V13H12V12Z" fill="#383734"/>
+<path d="M11 11H12V12H11V11Z" fill="#383734"/>
+<path d="M10 10H11V11H10V10Z" fill="#383734"/>
+<path d="M9 9H10V10H9V9Z" fill="#383734"/>
+<path d="M8 8H9V9H8V8Z" fill="#383734"/>
+<path d="M7 7H8V8H7V7Z" fill="#383734"/>
+<path d="M6 6H7V7H6V6Z" fill="#383734"/>
+<path d="M5 5H6V6H5V5Z" fill="#383734"/>
+<path d="M4 4H5V5H4V4Z" fill="#383734"/>
+<path d="M3 3H4V4H3V3Z" fill="#383734"/>
+<path d="M2 2H3V3H2V2Z" fill="#383734"/>
+<path d="M1 1H2V2H1V1Z" fill="#383734"/>
+<path d="M0 0H1V1H0V0Z" fill="#383734"/>
+<path d="M40.5 0.5V40M40.5 41V80.5M0.5 40.5H40M41 40.5H80.5" stroke="#2E2D2A"/>
+</svg>
