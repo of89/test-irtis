@@ -655,7 +655,7 @@ header .logo:hover {
     min-width: 0;
     max-width: 100vw;
     width: 100%;
-    background: var(--pink-bg-bla);
+    background: var(--pink-bg-black);
     mask: url("/img/bg/pattern/struckaxiom-light.svg") repeat center / 200px 200px;
     background-size: cover;
     background-position: center;
