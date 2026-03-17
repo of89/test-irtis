@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth; /* включает плавный скролл */
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -781,7 +785,7 @@ header .logo:hover {
     flex: 1 1 400px;
     min-width: 400px;
     max-width: 560px;
-    width: 100vw;
+    width: 100%;
     height: 256px;
     border-radius: 0 24px;
     background: lightgray 50% / cover no-repeat;
@@ -8837,7 +8841,6 @@ footer.wide-footer .footer-meta .text-info {
 /*  ГЛАВНАЯ > ИНТРО БЛОК ——— small */
     .intro {
         padding: 40px 16px 48px 16px;
-        mask-size: 32px 32px;  /* меньше паттерн на мобилках */
     }
 
     .intro h1 {
