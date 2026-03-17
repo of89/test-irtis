@@ -657,7 +657,7 @@ header .logo:hover {
     width: 100%;
     background: 
         var(--pink-bg-black),
-        url("/img/bg/pattern/struckaxiom-light_v1.0.svg");
+        url(/img/bg/pattern/struckaxiom-light_v1.0.svg);
     background-size: cover, 96px 96px;
     background-position: center, 50% 50%;
     background-repeat: no-repeat, repeat;
