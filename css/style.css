@@ -663,6 +663,7 @@ header .logo:hover {
     background-image: url(/img/bg/pattern/struckaxiom-light_v1.0.svg);
     background-repeat: repeat;
     background-position: 0 0;
+    background-size: 96px 96px;
     padding: 104px 64px;
     margin: 0;
 }
@@ -5962,6 +5963,7 @@ footer.wide-footer .footer-meta .text-info {
 
 /*  ГЛАВНАЯ > ИНТРО БЛОК ——— */
     .intro {
+        background-size: 64px 64px;
         gap: 0;
         padding: 72px 40px 80px 40px;
     }
@@ -8840,6 +8842,7 @@ footer.wide-footer .footer-meta .text-info {
 
 /*  ГЛАВНАЯ > ИНТРО БЛОК ——— small */
     .intro {
+        background-size: 40px 40px;
         padding: 40px 16px 48px 16px;
     }
 
